@@ -345,7 +345,7 @@ extension FileTree: NSOutlineViewDelegate {
     }
 
     private func imageForFile(atPath path: String, size: NSSize) -> NSImage {
-        return NSWorkspace.shared.icon(forFile: path)
+        return NSWorkspace.icon(forFile: path)
     }
 
     private func rowViewForFile(atPath path: String) -> NSView {
