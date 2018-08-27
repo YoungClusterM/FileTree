@@ -140,7 +140,7 @@ public class FileTree: NSBox {
     private var scrollView = NSScrollView(frame: .zero)
 
     private var autosaveName: NSTableView.AutosaveName {
-        return NSTableView.AutosaveName(rawValue: rootPath)
+        return NSTableView.autosaveName(rawValue: rootPath)
     }
 
     private func contentsOfDirectory(atPath path: String) -> [String] {
